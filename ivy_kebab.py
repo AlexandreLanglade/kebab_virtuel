@@ -1,5 +1,5 @@
 #!/usr/bin/env/python
-# Mon agent ivy en python
+
 from ivy.ivy import IvyServer
 import pygame, sys
 from pygame.locals import *
@@ -52,7 +52,6 @@ screen.blit(bg, (0,0))
 while(True):
 	for event in pygame.event.get():
 		if(event.type == QUIT):
-			# quit() is the opposite of init()
 			pygame.quit()
 			sys.exit()
 	pygame.display.update()
