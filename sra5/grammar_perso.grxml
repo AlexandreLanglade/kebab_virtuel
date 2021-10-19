@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE grammar PUBLIC "-//W3C//DTD GRAMMAR 1.0//EN"
+                "grammar.dtd">
+<!-- the default grammar language is FR  -->
+<grammar  version="1.0"
+          mode ="voice"
+          xmlns="http://www.w3.org/2001/06/grammar"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.w3.org/2001/06/grammar
+                              grammar.xsd"
+          xml:lang="fr-FR" root="kebab" tag-format="semantics/1.0">
+          
+   <rule id="kebab" scope="public"> 
+    <ruleref special="GARBAGE" /> 
+    <one-of>
+      <item> salade <tag>out="action=salade";</tag></item>
+      <item> tomate <tag>out="action=tomate";</tag></item>
+      <item> oignon <tag>out="action=oignon";</tag></item>
+      <item> sauce <tag>out="action=sauce";</tag></item>
+      <item> viande <tag>out="action=viande";</tag></item>
+    </one-of>
+    <ruleref special="GARBAGE" />
+  </rule>
+      
+</grammar>
